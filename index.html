@@ -23,29 +23,36 @@
         <header class="header">
             <div class="header-top">
                 <div class="container">
-                    Oferta Exclusiva de Black Friday! <span class="span skewBg">10</span> Dias
+                    <div class="countdown-text">
+                        Oferta Exclusiva de Black Friday!
+                        <span class="span skewBg">10</span> Dias
+                    </div>
 
                     <!-- Redes Sociais -->
                     <div class="social-wrapper">
                         <p class="social-title">Siga-nos em:</p>
-                        <ul class="social-link">
-                            <a href="#" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <ul class="social-list">
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-pinterest"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                            </li>
                         </ul>
-                        <li>
-                            <ul class="social-link">
-                                <a href="#" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul class="social-link">
-                                <a href="#" class="social-link"><ion-icon name="logo-pinterest"></ion-icon></a>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul class="social-link">
-                                <a href="#" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a>
-                            </ul>
-                        </li>
                     </div>
                 </div>
             </div>
@@ -78,15 +85,17 @@
                         </ul>
                     </nav>
                     <div class="header-actions">
-                        <button class="cart-btn" aria-label="carrinho"><ion-icon name="cart"></ion-icon></button>
-                        <button class="search-btn" aria-label="Abrir busca" data-search-toggler>
+                        <button class="cart-btn" aria-label="carrinho">
+                            <ion-icon name="cart"></ion-icon>
+                            <span class="cart-badge">0</span>
+                        </button>
+                        <button class="search-btn" aria-label="Abrir Busca" data-search-toggler>
                             <ion-icon name="search-outline"></ion-icon>
                         </button>
-                        <button class="nav-toggler-btn" aria-label="Alternar Menu" data-nav-toggler>
+                        <button class="nav-toggle-btn" aria-label="Alternar Menu" data-nav-toggler>
                             <ion-icon name="menu-outline" class="menu"></ion-icon>
                             <ion-icon name="close-outline" class="close"></ion-icon>
-
-
+                        </button>
                     </div>
                 </div>
             </div>
@@ -108,7 +117,7 @@
             <article>
                 <!-- Hero -->
                 <section class="section hero" id="nome" aria-label="início"
-                    style="background-image: url(./assets/images/hero-g.jpg)">
+                    style="background-image: url(./assets/images/hero-bg.jpg)">
                     <div class="container">
                         <div class="hero-content">
                             <p class="hero-subtitle">Mundo dos Games</p>
@@ -116,9 +125,9 @@
                             <p class="hero-text">Encontre tecnologia ou pessoas para projetos digitais no setor público
                                 e encontre um especialista, desenvolvedor ou pesquisador.
                             </p>
-                            <button class="skeBg">Leia Mais</button>
+                            <button class="btn skewBg">Leia Mais</button>
                         </div>
-                        <figure class="hero-banner img-holder" style="--width: 700; --height: 700;">
+                        <figure class="hero-banner img-holder" style="--width: 700; --height: 700">
                             <img src="./assets/images/hero-banner.png" height="700" width="700" alt="Banner Principal"
                                 class="w-100">
                         </figure>
@@ -130,27 +139,27 @@
                         <ul class="has-scrollbar">
                             <li class="brand-item">
                                 <img src="./assets/images/brand-1.png" width="90" height="90" loading="lazy"
-                                    alt="Logo da Marca">
+                                    alt="Logo da Marca" />
                             </li>
-                            <li>
+                            <li class="brand-item">
                                 <img src="./assets/images/brand-2.png" width="90" height="90" loading="lazy"
-                                    alt="Logo da Marca">
+                                    alt="Logo da Marca" />
                             </li>
-                            <li>
+                            <li class="brand-item">
                                 <img src="./assets/images/brand-3.png" width="90" height="90" loading="lazy"
-                                    alt="Logo da Marca">
+                                    alt="Logo da Marca" />
                             </li>
-                            <li>
+                            <li class="brand-item">
                                 <img src="./assets/images/brand-4.png" width="90" height="90" loading="lazy"
-                                    alt="Logo da Marca">
+                                    alt="Logo da Marca" />
                             </li>
-                            <li>
+                            <li class="brand-item">
                                 <img src="./assets/images/brand-5.png" width="90" height="90" loading="lazy"
-                                    alt="Logo da Marca">
+                                    alt="Logo da Marca" />
                             </li>
-                            <li>
+                            <li class="brand-item">
                                 <img src="./assets/images/brand-6.png" width="90" height="90" loading="lazy"
-                                    alt="Logo da Marca">
+                                    alt="Logo da Marca" />
                             </li>
                         </ul>
                     </div>
@@ -519,119 +528,125 @@
 
                     <!-- Blog -->
                     <section class="section blog" id="blog" aria-label="blog">
-                        <h2 class="h2 section-title">
-                            Últimas Notícias & <span class="span">Artigos</span>
-                        </h2>
-                        <p class="section-text">
-                            Compita com 100 jogadores em uma ilha por uma batalha onde o vencedor leva tudo.
-                        </p>
-                        <ul class="blog-list">
-                            <li>
-                                <div class="blog-card">
-                                    <figure class="card-banner img" style="--width: 400; --height:290;">
-                                        <img src="./assets/images/blog-1.jpg" alt="Video de Ação de Tiro"
-                                            class="img-cover">
-                                    </figure>
-                                    <div class="card-content">
-                                        <ul class="card-meta-list">
-                                            <li class="card-meta-item">
-                                                <ion-icon name="person-outline"></ion-icon>
-                                                <a href="#" class="item-text">Admin</a>
-                                            </li>
-                                            <li class="card-meta-item">
-                                                <ion-icon name="calendar-outline"></ion>
+                        <div class="container">
+                            <h2 class="h2 section-title">
+                                Últimas Notícias & <span class="span">Artigos</span>
+                            </h2>
+                            <p class="section-text">
+                                Compita com 100 jogadores em uma ilha por uma
+                                batalha onde o vencedor leva tudo.
+                            </p>
+                            <ul class="blog-list">
+                                <li>
+                                    <div class="blog-card">
+                                        <figure class="card-banner img-holder" style="--width: 400; --height: 290">
+                                            <img src="./assets/images/blog-1.jpg" width="400" height="290"
+                                                loading="lazy" alt="Vídeo de Ação e Tiro" class="img-cover" />
+                                        </figure>
+                                        <div class="card-content">
+                                            <ul class="card-meta-list">
+                                                <li class="card-meta-item">
+                                                    <ion-icon name="person-outline"></ion-icon>
+                                                    <a href="#" class="item-text">Admin</a>
+                                                </li>
+                                                <li class="card-meta-item">
+                                                    <ion-icon name="calendar-outline"></ion-icon>
                                                     <time datetime="07-10-2025" class="item-text">
                                                         07 de Outubro de 2025
                                                     </time>
-                                            </li>
-                                        </ul>
-                                        <h3>
-                                            <a href="#" class="card-title">
-                                                Vídeo de Ação e Tiro
+                                                </li>
+                                            </ul>
+                                            <h3>
+                                                <a href="#" class="card-title">
+                                                    Vídeo de Ação e Tiro
+                                                </a>
+                                            </h3>
+                                            <p class="card-text">
+                                                Compita com 100 jogadores em uma
+                                                ilha por uma batalha onde o vencedor
+                                                leva tudo.
+                                            </p>
+                                            <a href="#" class="card-link">
+                                                <span class="span">Leia Mais</span>
+                                                <ion-icon name="caret-forward"></ion-icon>
                                             </a>
-                                        </h3>
-                                        <p class="section-text">
-                                            Compita com 100 jogadores em uma ilha por uma batalha onde o
-                                            vencedor leva tudo.
-                                        </p>
-                                        <a href="#" class="card-link"><span class="span">Leia mais..</span>
-                                            <ion-icon name="carel-forward"></ion-icon></a>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="blog-card">
-                                    <figure class="card-banner img-holder" style="--width: 400; --height: 290;">
-                                        <img src="./assets/images/blog-2.jpg" width="400" height="290" loading="lazy"
-                                            alt="The Walking Dead" class="img-cover" />
-                                    </figure>
-                                    <div class="card-content">
-                                        <ul class="card-meta-list">
-                                            <li class="card-meta-item">
-                                                <ion-icon name="person-outline"></ion-icon>
-                                                <a href="#" class="item-text">Admin</a>
-                                            </li>
-                                            <li class="card-meta-item">
-                                                <ion-icon name="calendar-outline"></ion-icon>
-                                                <time datetime="07-10-2025" class="item-text">
-                                                    07 de Outubro de 2025
-                                                </time>
-                                            </li>
-                                        </ul>
-                                        <h3>
-                                            <a href="#" class="card-title">
-                                                The Walking Dead
+                                </li>
+                                <li>
+                                    <div class="blog-card">
+                                        <figure class="card-banner img-holder" style="--width: 400; --height: 290">
+                                            <img src="./assets/images/blog-2.jpg" width="400" height="290"
+                                                loading="lazy" alt="The Walking Dead" class="img-cover" />
+                                        </figure>
+                                        <div class="card-content">
+                                            <ul class="card-meta-list">
+                                                <li class="card-meta-item">
+                                                    <ion-icon name="person-outline"></ion-icon>
+                                                    <a href="#" class="item-text">Admin</a>
+                                                </li>
+                                                <li class="card-meta-item">
+                                                    <ion-icon name="calendar-outline"></ion-icon>
+                                                    <time datetime="07-10-2025" class="item-text">
+                                                        07 de Outubro de 2025
+                                                    </time>
+                                                </li>
+                                            </ul>
+                                            <h3>
+                                                <a href="#" class="card-title">
+                                                    The Walking Dead
+                                                </a>
+                                            </h3>
+                                            <p class="card-text">
+                                                Compita com 100 jogadores em uma
+                                                ilha por uma batalha onde o vencedor
+                                                leva tudo.
+                                            </p>
+                                            <a href="#" class="card-link">
+                                                <span class="span">Leia Mais</span>
+                                                <ion-icon name="caret-forward"></ion-icon>
                                             </a>
-                                        </h3>
-                                        <p class="card-text">
-                                            Compita com 100 jogadores em uma ilha por uma batalha onde o
-                                            vencedor leva tudo.
-                                        </p>
-                                        <a href="#" class="card-link">
-                                            <span class="span">Leia Mais</span>
-                                            <ion-icon name="caret-forward"></ion-icon>
-                                        </a>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="blog-card">
-                                    <figure class="card-banner img-holder" style="--width: 400; --height: 290;">
-                                        <img src="./assets/images/blog-3.jpg" width="400" height="290" loading="lazy"
-                                            alt="Defense of the Anscients" class="img-cover" />
-                                    </figure>
-                                    <div class="card-content">
-                                        <ul class="card-meta-list">
-                                            <li class="card-meta-item">
-                                                <ion-icon name="person-outline"></ion-icon>
-                                                <a href="#" class="item-text">Admin</a>
-                                            </li>
-                                            <li class="card-meta-item">
-                                                <ion-icon name="calendar-outline"></ion-icon>
-                                                <time datetime="07-10-2025" class="item-text">
-                                                    07 de Outubro de 2025
-                                                </time>
-                                            </li>
-                                        </ul>
-                                        <h3>
-                                            <a href="#" class="card-title">
-                                                Defense of the Anscients
+                                </li>
+                                <li>
+                                    <div class="blog-card">
+                                        <figure class="card-banner img-holder" style="--width: 400; --height: 290">
+                                            <img src="./assets/images/blog-3.jpg" width="400" height="290"
+                                                loading="lazy" alt="Defense Of The Ancients" class="img-cover" />
+                                        </figure>
+                                        <div class="card-content">
+                                            <ul class="card-meta-list">
+                                                <li class="card-meta-item">
+                                                    <ion-icon name="person-outline"></ion-icon>
+                                                    <a href="#" class="item-text">Admin</a>
+                                                </li>
+                                                <li class="card-meta-item">
+                                                    <ion-icon name="calendar-outline"></ion-icon>
+                                                    <time datetime="07-10-2025" class="item-text">
+                                                        07 de Outubro de 2025
+                                                    </time>
+                                                </li>
+                                            </ul>
+                                            <h3>
+                                                <a href="#" class="card-title">
+                                                    Defense Of The Ancients
+                                                </a>
+                                            </h3>
+                                            <p class="card-text">
+                                                Compita com 100 jogadores em uma
+                                                ilha por uma batalha onde o vencedor
+                                                leva tudo.
+                                            </p>
+                                            <a href="#" class="card-link">
+                                                <span class="span">Leia Mais</span>
+                                                <ion-icon name="caret-forward"></ion-icon>
                                             </a>
-                                        </h3>
-                                        <p class="card-text">
-                                            Compita com 100 jogadores em uma ilha por uma batalha onde o
-                                            vencedor leva tudo.
-                                        </p>
-                                        <a href="#" class="card-link">
-                                            <span class="span">Leia Mais</span>
-                                            <ion-icon name="caret-forward"></ion-icon>
-                                        </a>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-                        </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </section>
 
                     <!-- Newsletter -->
@@ -644,10 +659,10 @@
                                 <form action="" class="newsletter-form">
                                     <div class="input-wrapper skewBg">
                                         <input type="email" name="email_address" aria-label="email"
-                                            placeholder="Digite seu emial.." required class="email-field" id="">
+                                            placeholder="Digite seu email..." required class="email-field" />
                                         <ion-icon name="mail-outline"></ion-icon>
                                     </div>
-                                    <button type="submit" class="btn-newsletter-btn skewBg">
+                                    <button type="submit" class="btn newsletter-btn skewbg">
                                         <span class="span">Inscreva-se</span>
                                         <ion-icon name="paper-plane" aria-hidden="true"></ion-icon>
                                     </button>
